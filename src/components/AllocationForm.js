@@ -12,9 +12,16 @@ const AllocationForm = (props) => {
 
             if(cost > remaining) {
                 alert("The value cannot exceed remaining funds  £"+remaining);
-                setCost("");
+                setCost("");[]
                 return;
             }
+
+            //Returns entered expense only if it is an Integer.
+            if(Number.isInteger(expense)) {
+               ;
+              } else {
+                alert("Enter a valid Integer");
+              }
 
         const expense = {
             name: name,
