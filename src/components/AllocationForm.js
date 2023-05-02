@@ -8,6 +8,18 @@ const AllocationForm = (props) => {
     const [cost, setCost] = useState('');
     const [action, setAction] = useState('');
 
+    //Returns entered expense only if it is an Integer.
+    const checkforinteger = () => {
+            
+        if (isNaN(cost)) {
+          alert('It is not a Number');
+        } else {
+          ;
+        }
+      };
+    
+    
+    
     const submitEvent = () => {
 
             if(cost > remaining) {
@@ -21,9 +33,10 @@ const AllocationForm = (props) => {
         const expense = {
             name: name,
             cost: parseInt(cost),
+            checkforinteger()}
         };
 
-        //Returns entered expense only if it is an Integer.
+        
         if(Number.isInteger(expense)) {
             ;
            } else {
