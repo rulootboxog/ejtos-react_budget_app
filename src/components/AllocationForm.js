@@ -20,9 +20,9 @@ const AllocationForm = (props) => {
             
             const checkforinteger = (cost) => {
                     
-                //Returns entered expense only if it is an Integer.
+                //Returns entered expense only if it is an Number.
                 if(isNaN(cost)) {
-                    alert("Enter a valid Integer");
+                    alert("Please nter a valid Number");
                 }
       };
 
