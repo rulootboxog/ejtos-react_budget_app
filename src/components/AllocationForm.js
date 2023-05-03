@@ -73,7 +73,7 @@ const AllocationForm = (props) => {
                   </select>
 
                   <div className="input-group-prepend" style={{ marginLeft: '2rem' }}>
-                <label className="input-group-text" htmlFor="inputGroupSelect03">Allocation</label>
+                <label className="input-group-text" htmlFor="inputGroupSelect03">Currency</label>
                   </div>
                   <select className="custom-select" id="inputGroupSelect03" onChange={(event) => setAction(event.target.value)}>
                         <option defaultValue value="$" name="$">$</option>
