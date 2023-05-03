@@ -12,4 +12,4 @@ const ExpenseTotal = () => {
     );
 };
 export default ExpenseTotal;
-export function totalExpenses();
+export {totalExpenses};
