@@ -3,7 +3,6 @@ import { AppContext } from '../context/AppContext';
 
 
 
-
 export const currentCurrency = '$'
 
 const AllocationForm = (props) => {
