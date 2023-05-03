@@ -7,6 +7,7 @@ const AllocationForm = (props) => {
     const [name, setName] = useState('');
     const [cost, setCost] = useState('');
     const [action, setAction] = useState('');
+    const [money, setMoney] = useState('');
 
     const submitEvent = () => {
 
@@ -44,6 +45,8 @@ const AllocationForm = (props) => {
                     payload: expense,
                 });
             }
+         
+
     };
 
     return (
@@ -75,7 +78,7 @@ const AllocationForm = (props) => {
                   <div className="input-group-prepend" style={{ marginLeft: '2rem' }}>
                 <label className="input-group-text" htmlFor="inputGroupSelect03">Currency</label>
                   </div>
-                  <select className="custom-select" id="inputGroupSelect03" onChange={(event) => setAction(event.target.value)}>
+                  <select className="custom-select" id="inputGroupSelect03" onChange={(event) => setMoney(event.target.value)}>
                         <option defaultValue value="$" name="$">$</option>
                         <option value="£" name="£">£</option>
                         <option value="€" name="€">€</option>
