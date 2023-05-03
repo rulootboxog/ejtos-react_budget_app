@@ -1,13 +1,21 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 
+const { dispatch,remaining  } = useContext(AppContext);
+const [money, setMoney] = useState('');
+
+const currentCurrency = {
+
+    money: String(money),
+};
+
 const AllocationForm = (props) => {
     const { dispatch,remaining  } = useContext(AppContext);
 
     const [name, setName] = useState('');
     const [cost, setCost] = useState('');
     const [action, setAction] = useState('');
-    const [money, setMoney] = useState('');
+    
 
     const submitEvent = () => {
 
