@@ -4,7 +4,7 @@ import { AppContext } from '../context/AppContext';
 
 
 
-export const currentCurrency = this.money
+export const currentCurrency = '$'
 
 const AllocationForm = (props) => {
     const { dispatch,remaining  } = useContext(AppContext);
