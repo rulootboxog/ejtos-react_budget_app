@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
+export var totalExpenses;
 const ExpenseTotal = () => {
     const { expenses } = useContext(AppContext);
-    const totalExpenses = expenses.reduce((total, item) => {
+    totalExpenses = expenses.reduce((total, item) => {
         return (total += item.cost);
     }, 0);
     return (
@@ -10,5 +11,6 @@ const ExpenseTotal = () => {
             <span>Spent so far: £{totalExpenses}</span>
         </div>
     );
+    
 };
 export default ExpenseTotal;

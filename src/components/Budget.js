@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
-import { totalExpenses } from '../components/ExpenseTotal.js';
+import totalExpenses from './ExpenseTotal.js';
 
 const Budget = () => {
     const { budget } = useContext(AppContext);
