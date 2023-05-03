@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
-import { ExpenseTotal } from '../components/ExpenseTotal';
+import { totalExpenses } from '../components/ExpenseTotal.js';
 const Budget = () => {
     const { budget } = useContext(AppContext);
     return (
         <div className='alert alert-secondary'>
-            <span>Budget: £</span><input type="number" defaultValue={budget} min={ExpenseTotal.totalExpenses}></input>
+            <span>Budget: £</span><input type="number" defaultValue={budget} min={totalExpenses}></input>
         </div>
     );
 };
