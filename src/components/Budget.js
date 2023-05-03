@@ -4,7 +4,7 @@ const Budget = () => {
     const { budget } = useContext(AppContext);
     return (
         <div className='alert alert-secondary'>
-            <span contenteditable={true}>Budget: £{budget}</span>
+            <input type="number">Budget: £{budget}</input>
         </div>
     );
 };
