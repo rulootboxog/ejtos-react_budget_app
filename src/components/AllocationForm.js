@@ -31,8 +31,9 @@ const AllocationForm = (props) => {
         const expense = {
             name: name,
             cost: parseInt(cost),
-            checkforinteger
+            
         };
+        checkforinteger()
         if(action === "Reduce") {
             dispatch({
                 type: 'RED_EXPENSE',
