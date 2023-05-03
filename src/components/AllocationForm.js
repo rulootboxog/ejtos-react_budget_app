@@ -8,43 +8,31 @@ const AllocationForm = (props) => {
     const [cost, setCost] = useState('');
     const [action, setAction] = useState('');
 
-    //Returns entered expense only if it is an Integer.
-    const checkforinteger = () => {
-            
-        //Returns entered expense only if it is an Integer.
-        if(Number.isInteger(cost)) {
-            ;
-           } else {
-             alert("Enter a valid Integer");
-           }
-      };
-    
-    
-    
     const submitEvent = () => {
 
             if(cost > remaining) {
                 alert("The value cannot exceed remaining funds  £"+remaining);
-                setCost("");[]
+                setCost("");
                 return;
             }
 
+
             
+            const checkforinteger = () => {
+                    
+                //Returns entered expense only if it is an Integer.
+                if(Number.isInteger(cost)) {
+                    ;
+                } else {
+                    alert("Enter a valid Integer");
+                }
+      };
 
         const expense = {
             name: name,
             cost: parseInt(cost),
-            checkforinteger()
-          }
+            checkforinteger
         };
-
-        
-        if(Number.isInteger(expense)) {
-            ;
-           } else {
-             alert("Enter a valid Integer");
-           }
-
         if(action === "Reduce") {
             dispatch({
                 type: 'RED_EXPENSE',
