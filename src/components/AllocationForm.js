@@ -18,12 +18,10 @@ const AllocationForm = (props) => {
 
 
             
-            const checkforinteger = () => {
+            const checkforinteger = (cost) => {
                     
                 //Returns entered expense only if it is an Integer.
-                if(Number.isInteger(cost)) {
-                    ;
-                } else {
+                if(isNaN(cost)) {
                     alert("Enter a valid Integer");
                 }
       };
@@ -33,7 +31,7 @@ const AllocationForm = (props) => {
             cost: parseInt(cost),
             
         };
-        checkforinteger()
+        checkforinteger(expense)
         if(action === "Reduce") {
             dispatch({
                 type: 'RED_EXPENSE',
