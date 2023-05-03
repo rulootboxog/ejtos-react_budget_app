@@ -4,7 +4,7 @@ const Budget = () => {
     const { budget } = useContext(AppContext);
     return (
         <div className='alert alert-secondary'>
-            <input type="number">Budget: £{budget}</input>
+            <input type="number"></input><span>Budget: £{budget}</span>
         </div>
     );
 };
