@@ -3,7 +3,6 @@ import { AppContext } from '../context/AppContext';
 
 
 
-export const currentCurrency = '$'
 
 const AllocationForm = (props) => {
     const { dispatch,remaining  } = useContext(AppContext);
@@ -49,12 +48,20 @@ const AllocationForm = (props) => {
                     payload: expense,
                 });
             }
+
+        
          
 
     };
 
     return (
+
+        
+
         <div>
+
+            <h3 className='mt-3'>Change allocation {money}</h3>
+
             <div className='row'>
 
             <div className="input-group mb-3" style={{ marginLeft: '2rem' }}>
