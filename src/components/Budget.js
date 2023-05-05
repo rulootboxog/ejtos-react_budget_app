@@ -20,7 +20,7 @@ const Budget = () => {
     
 };
 
-if (Budget.value.max > 20000) {
+if (Budget.max > 20000) {
 
     alert("The Value cannot exceed the budget");
 }
