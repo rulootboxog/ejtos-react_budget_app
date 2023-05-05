@@ -11,10 +11,21 @@ const Budget = () => {
     const { budget } = useContext(AppContext);
     return (
         <div className='alert alert-secondary'>
-            <span>Budget: £</span><input type="number" defaultValue={budget} min={totalExpenses} max={20000} step={10}></input>
+            <span>Budget: £</span><input type="number" name="Budget" defaultValue={budget} min={totalExpenses} max={20000} step={10}></input>
+            
+
         </div>
+        
     );
+    
 };
+
+if (Budget.value.max > 20000) {
+
+    alert("The Value cannot exceed the budget");
+}
+
+
 
 
 export default Budget;
