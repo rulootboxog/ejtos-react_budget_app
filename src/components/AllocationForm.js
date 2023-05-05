@@ -52,7 +52,7 @@ const AllocationForm = (props) => {
             }
 
         
-         
+         money = "$"
 
     };
 
@@ -98,7 +98,8 @@ const AllocationForm = (props) => {
                         <option value="₹" name="₹">₹</option>
                   </select>
                 
-                    <h3 defaultValue="$" style={{ marginLeft: '2rem' , size: 10}}>{money}</h3>               
+                                    
+                    <h3 style={{ marginLeft: '2rem' , size: 10}}>{money}</h3>               
                     <input
                         required='required'
                         type='number'
