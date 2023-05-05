@@ -20,7 +20,9 @@ const Budget = () => {
     
 };
 
-if (Budget.max > 20000) {
+var getValue = $('#Budget').val();
+
+if (getValue > 20000) {
 
     alert("The Value cannot exceed the budget");
 }
