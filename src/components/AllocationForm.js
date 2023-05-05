@@ -97,7 +97,8 @@ const AllocationForm = (props) => {
                         <option value="€" name="€">€</option>
                         <option value="₹" name="₹">₹</option>
                   </select>
-
+                
+                    <h3>{money}</h3>               
                     <input
                         required='required'
                         type='number'
