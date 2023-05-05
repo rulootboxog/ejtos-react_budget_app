@@ -27,6 +27,7 @@ if (getValue > 20000) {
     alert("The Value cannot exceed the budget");
 }
 
+alert("The Value cannot exceed the budget");
 
 
 
