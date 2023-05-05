@@ -18,6 +18,7 @@ const AllocationForm = (props) => {
                 alert("The value cannot exceed remaining funds  £"+remaining);
                 setCost("");
                 alert("The Value cannot exceed the budget");
+                alert("You cannot reduce the budget lower than the spending");
                 return;
             }
 
