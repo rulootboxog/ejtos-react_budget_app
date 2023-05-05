@@ -9,12 +9,9 @@ const Budget = () => {
         return (total += item.cost);
     }, 0);
     const { budget } = useContext(AppContext);
-    
-    var getValue = ('#Budget').val();
 
-    if (getValue > 20000) {
 
-        alert("The Value cannot exceed the budget");
+        
     }
     return (
         <div className='alert alert-secondary'>
@@ -25,7 +22,6 @@ const Budget = () => {
         
     );
     
-};
 
 
 
