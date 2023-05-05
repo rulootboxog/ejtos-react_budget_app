@@ -20,7 +20,7 @@ const Budget = () => {
     
 };
 
-var getValue = $('#Budget').val();
+var getValue = ('#Budget').val();
 
 if (getValue > 20000) {
 
