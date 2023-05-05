@@ -9,10 +9,10 @@ const Budget = () => {
         return (total += item.cost);
     }, 0);
     const { budget } = useContext(AppContext);
+    
+    var getValue = ('#Budget').val();
 
 
-        
-    }
     return (
         <div className='alert alert-secondary'>
             <span>Budget: £</span><input type="number" name="Budget" defaultValue={budget} min={totalExpenses} max={20000} step={10}></input>
@@ -22,6 +22,7 @@ const Budget = () => {
         
     );
     
+};
 
 
 
