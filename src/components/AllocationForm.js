@@ -92,10 +92,10 @@ const AllocationForm = (props) => {
                 <label className="input-group-text" htmlFor="inputGroupSelect03">Currency</label>
                   </div>
                   <select className="custom-select" id="inputGroupSelect03" onChange={(event) => setMoney(event.target.value)} style={{ color: 'green'}}>
-                        <option defaultValue="$ Dollar" value="$ Dollar" name="">$</option>
-                        <option value="£ Pound" name="£">£</option>
-                        <option value="€ Euro" name="€">€</option>
-                        <option value="₹ Ruppee" name="₹">₹</option>
+                        <option defaultValue="$ Dollar" value="$ Dollar" name="">$ Dollar</option>
+                        <option value="£ Pound" name="£">£ Pound</option>
+                        <option value="€ Euro" name="€">€ Euro</option>
+                        <option value="₹ Ruppee" name="₹">₹ Ruppee</option>
                   </select>
                 
                                     
