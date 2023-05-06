@@ -52,7 +52,7 @@ const AllocationForm = (props) => {
             }
 
         
-         money = "$"
+        
 
     };
 
